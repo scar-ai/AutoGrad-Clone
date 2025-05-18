@@ -17,7 +17,6 @@ def generate_real_data():
     iris = load_iris()
     X, y = iris.data, iris.target
 
-    # Adjusting the dataset to match the model input dimensions (10 features)
     X = np.pad(X, ((0, 0), (0, 6)), 'constant')
 
     encoder = OneHotEncoder(sparse_output=False)
