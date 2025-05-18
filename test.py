@@ -40,7 +40,6 @@ class MyAutogradModel(ModelArch):
             "fc2": Linear(8, 3, weights=he_normal_init(8, 3))
         }
         super().__init__()
-        self._register_parameters(self.layers.values())
 
     def forward(self, x):
         out = ReLU(self.layers["fc1"](x))
