@@ -22,3 +22,4 @@ class YourModel(ModelArch):
         out = ReLU(self.layers["fc1"](x))
         return self.layers["fc2"](out)
 ```
+ A clear training loop implementation is displayed in test.py.
