@@ -7,7 +7,7 @@ A test file is provided comparing a model implemented with the custom autograd t
 
 ## Example model implementation:
 
-
+```
 class YourModel(ModelArch):
     def __init__(self):
         self.layers = {
@@ -21,3 +21,4 @@ class YourModel(ModelArch):
         # Forward pass implmentation
         out = ReLU(self.layers["fc1"](x))
         return self.layers["fc2"](out)
+```
